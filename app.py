@@ -1,4 +1,5 @@
 import streamlit as st
+import altair as alt
 import numpy as np
 import tensorflow as tf
 from sklearn.preprocessing import StandardScaler, LabelEncoder, OneHotEncoder
@@ -65,4 +66,5 @@ st.write(f'Churn Probability: {pred_prob:.2f}')
 if pred_prob > 0.5:
     st.write("The customer is likely to churn")
 else:
+
     st.write("The customer is not likely to churn")
